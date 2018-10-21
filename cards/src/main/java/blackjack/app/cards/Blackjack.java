@@ -50,7 +50,7 @@ public class Blackjack {
     }
 
 
-    public void shuffleDeck() {
+    private void shuffleDeck() {
         Collections.shuffle(deck);
     }
 

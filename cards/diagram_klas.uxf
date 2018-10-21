@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>0</y>
+      <w>400</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>Card
+--
+-color: int
+-figure: int
+--
++Card(int f, int c)
++createDeck(): List&lt;Card&gt;
++getColor(): int
++getValue(): int
++getInfo(): String
++deckValue(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>270</y>
+      <w>200</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>Blackjack
+--
+-score: int
+-deck: List&lt;Card&gt;
+-hand: List&lt;Card&gt;
++dealer : Dealer
+-gui: BFrame
+--
++reset()
++hit()
+-getTopCard(): Card
+-onStart()
+-shuffleDeck()
++getScore(): int
+-updateScore()
++getHandSize(): int
++handToArray(): card[]
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>360</x>
+      <y>270</y>
+      <w>200</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Dealer
+--
++score: int
++deck: List&lt;Card&gt;
++hand: List&lt;Card&gt;
+--
++hit()
+-getTopCard(): Card
+-shuffleDeck()
++getScore(): int
+-updateScore()
++getHandSize(): int
++handToArray(): card[]
+
+
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>130</x>
+      <y>160</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>160</y>
+      <w>40</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*
+</panel_attributes>
+    <additional_attributes>10.0;110.0;10.0;10.0</additional_attributes>
+  </element>
+</diagram>

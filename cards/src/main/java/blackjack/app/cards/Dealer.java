@@ -17,7 +17,7 @@ public class Dealer {
 		shuffleDeck();
 	}
 	
-	public void shuffleDeck() {
+	private void shuffleDeck() {
         Collections.shuffle(deck);
     }
 	
